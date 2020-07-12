@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Converter</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="head">Base Convertor</div>
+
+	<div class="wrapper">
+
+		<input type="text" id="inpnum" placeholder="Number to convert">
+
+		<div class="btngrp">
+
+			<!-- <div class="title">Convert: </div> -->
+			
+			<select id="dropdown">
+				<option value="">Select conversion:</option>
+
+				<option disabled>──────────</option>
+
+				<option value="">Decimal to Binary</option>
+				<option value="">Decimal to Octal</option>
+				<option value="">Decimal to Hexadecimal</option>
+
+				 <option disabled>──────────</option>
+
+				<option value="">Binary to Decimal</option>
+				<option value="">Binary to Octal</option>
+				<option value="">Binary to Hexadecimal</option>
+
+				<option disabled>──────────</option>
+
+				<option value="">Octal to Decimal</option>
+				<option value="">Octal to Binary</option>
+				<option value="">Octal to Hexadecimal</option>
+
+				<option disabled>──────────</option>
+
+				<option value="">Hexadecimal to Decimal</option>
+				<option value="">Hexadecimal to Binary</option>
+				<option value="">Hexadecimal to Octal</option>
+
+			</select>
+
+			<div class="btn" onclick="calculate()">Convert</div>
+
+		</div>
+
+		<div id="output">Output: <span id="res"></span></div>
+
+	</div>
+
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
